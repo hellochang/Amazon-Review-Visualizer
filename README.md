@@ -1,5 +1,6 @@
 # Product Review Visualizer
 Interactively shows customer's sentiment towards your product!
+
 ![An image for the UI of this project](assets/ui1.png)
 ![Another image for the UI of this project](assets/ui2.png)
 
@@ -10,7 +11,7 @@ Interactively shows customer's sentiment towards your product!
 - Visualizes the result
 
 ## Future improvements
-- [] Fix product dropdown UI
-- [] Amazon recently changed their web layout so our scraper can only fetch the first 100 of reviews. Fix this.
-- [] Change "product" to "type" in analyzed.csv
-- [] Date doesn't reflect on graph after selection
+-[] Fix product dropdown UI
+-[] Amazon recently changed their web layout so our scraper can only fetch the first 100 of reviews. Fix this.
+-[] Change "product" to "type" in analyzed.csv
+-[] Date doesn't reflect on graph after selection
