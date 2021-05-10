@@ -1,11 +1,16 @@
-# review
+# Product Review Visualizer
+Interactively shows customer's sentiment towards your product!
+![An image for the UI of this project](assets/ui1.png)
+![Another image for the UI of this project](assets/ui2.png)
 
-* About the project
-Be sure to write what inspired you, what you learned, how you built your project, and the challenges you faced. Format your story i
+## Project logic
+- User select the product they want to investigate
+- Our scraper would scrape the Amazon review for this product
+- We run sentiment analysis on the Amazon review
+- Visualizes the result
 
-uses expertai API
-Built with
-
-- [] Project demonstration video
-- [] URL to your publicly visible code repository and README description
-- [] Description of your project and use of the API 
+## Future improvements
+- [] Fix product dropdown UI
+- [] Amazon recently changed their web layout so our scraper can only fetch the first 100 of reviews. Fix this.
+- [] Change "product" to "type" in analyzed.csv
+- [] Date doesn't reflect on graph after selection
