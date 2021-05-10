@@ -4,8 +4,15 @@ import dash_html_components as html
 import pandas as pd
 from dash.dependencies import Input, Output
 from flask import Flask
+<<<<<<< HEAD
 data = pd.read_csv("analyzed.csv")
 
+=======
+# TO-DO
+## Change "product" to "type" in analyzed.csv
+## Date doesn't work yet
+data = pd.read_csv("analyzed.csv")
+>>>>>>> a99dd0568f25483183eca8d065dc97bba991ff55
 #print(data)
 #data = data.query("product == 'Nike Womens Reax Run 5 Running Shoes'")
 data["date"] = pd.to_datetime(data["date"], format="%d %b %Y")
@@ -29,12 +36,21 @@ app.layout = html.Div(
             children=[
                 html.P(children="⭐⭐⭐⭐⭐", className="header-emoji"),
                 html.H1(
+<<<<<<< HEAD
                     children="Analyzed Product Reviews", className="header-title"
                 ),
                 html.P(
                     children="Interactive shows the customer sentiment over time"
                     " and the rating over time of your product"
                     " during your your desired time interval based on Amazon reviews.",
+=======
+                    children="Product Reviews", className="header-title"
+                ),
+                html.P(
+                    children="Analyze the behavior of avocado prices"
+                    " and the number of avocados sold in the US"
+                    " between 2015 and 2018",
+>>>>>>> a99dd0568f25483183eca8d065dc97bba991ff55
                     className="header-description",
                 ),
             ],
@@ -109,12 +125,20 @@ app.layout = html.Div(
                             ],
                             "layout": {
                                 "title": {
+<<<<<<< HEAD
                                     "text": "Customer Sentiment over time",
+=======
+                                    "text": "Average Price of Avocados",
+>>>>>>> a99dd0568f25483183eca8d065dc97bba991ff55
                                     "x": 0.05,
                                     "xanchor": "left",
                                 },
                                 "xaxis": {"fixedrange": True},
                                 "yaxis": {
+<<<<<<< HEAD
+=======
+                                    #"tickprefix": "$",
+>>>>>>> a99dd0568f25483183eca8d065dc97bba991ff55
                                     "fixedrange": True,
                                 },
                                 "colorway": ["#17B897"],
@@ -137,7 +161,11 @@ app.layout = html.Div(
                             ],
                             "layout": {
                                 "title": {
+<<<<<<< HEAD
                                     "text": "Product Rating over Time",
+=======
+                                    "text": "Avocados Sold",
+>>>>>>> a99dd0568f25483183eca8d065dc97bba991ff55
                                     "x": 0.05,
                                     "xanchor": "left",
                                 },

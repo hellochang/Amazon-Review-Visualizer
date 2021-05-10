@@ -2,6 +2,12 @@ from expertai.nlapi.cloud.client import ExpertAiClient
 import pandas as pd
 import os
 
+<<<<<<< HEAD
+=======
+# Add login info
+# os.environ["EAI_USERNAME"] = 'chang17liu@gmail.com'
+# os.environ["EAI_PASSWORD"] = 'Chang001017!'
+>>>>>>> a99dd0568f25483183eca8d065dc97bba991ff55
 product_shown_1 = "Nike Women's Reax Run 5 Running Shoes"
 
 df = pd.read_csv('data.csv')
