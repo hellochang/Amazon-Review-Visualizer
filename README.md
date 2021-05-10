@@ -1,5 +1,5 @@
 # Product Review Visualizer
-Interactively shows customer's sentiment towards your product!
+Interactively visualizes customer's sentiment for your products based on reviews from Amazon!
 
 ![An image for the UI of this project](assets/ui1.png)
 ![Another image for the UI of this project](assets/ui2.png)
