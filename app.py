@@ -5,6 +5,7 @@ import pandas as pd
 from dash.dependencies import Input, Output
 from flask import Flask
 data = pd.read_csv("analyzed.csv")
+
 #print(data)
 #data = data.query("product == 'Nike Womens Reax Run 5 Running Shoes'")
 data["date"] = pd.to_datetime(data["date"], format="%d %b %Y")
@@ -28,12 +29,12 @@ app.layout = html.Div(
             children=[
                 html.P(children="⭐⭐⭐⭐⭐", className="header-emoji"),
                 html.H1(
-                    children="Product Reviews", className="header-title"
+                    children="Analyzed Product Reviews", className="header-title"
                 ),
                 html.P(
-                    children="Analyze the behavior of avocado prices"
-                    " and the number of avocados sold in the US"
-                    " between 2015 and 2018",
+                    children="Interactive shows the customer sentiment over time"
+                    " and the rating over time of your product"
+                    " during your your desired time interval based on Amazon reviews.",
                     className="header-description",
                 ),
             ],
@@ -108,7 +109,7 @@ app.layout = html.Div(
                             ],
                             "layout": {
                                 "title": {
-                                    "text": "Average Price of Avocados",
+                                    "text": "Customer Sentiment over time",
                                     "x": 0.05,
                                     "xanchor": "left",
                                 },
@@ -136,7 +137,7 @@ app.layout = html.Div(
                             ],
                             "layout": {
                                 "title": {
-                                    "text": "Avocados Sold",
+                                    "text": "Product Rating over Time",
                                     "x": 0.05,
                                     "xanchor": "left",
                                 },
