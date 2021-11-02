@@ -25,7 +25,6 @@ def senti_score(text):
 product1_df = product1_df.assign(sentiment_score = product1_df["content"].apply(senti_score))
 print(product1_df.head())
 
-### 
 # import matplotlib.pyplot as plt
 # plt.rcParams.update({'font.size': 20, 'figure.figsize': (10, 8)}) # set font and plot size to be larger
 
